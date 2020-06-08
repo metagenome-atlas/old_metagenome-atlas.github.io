@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Silas Kieser | Metagenome Atlas</title>
+    <link>https://metagenome-atlas.github.io/author/silas-kieser/</link>
+      <atom:link href="https://metagenome-atlas.github.io/author/silas-kieser/index.xml" rel="self" type="application/rss+xml" />
+    <description>Silas Kieser</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>https://metagenome-atlas.github.io/author/silas-kieser/avatar_huc07ca1f12d5615f55b0a0e0f54e8db0f_7558669_270x270_fill_q90_lanczos_center.jpg</url>
+      <title>Silas Kieser</title>
+      <link>https://metagenome-atlas.github.io/author/silas-kieser/</link>
+    </image>
+    
+  </channel>
+</rss>
