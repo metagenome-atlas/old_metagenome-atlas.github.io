@@ -416,7 +416,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="https://metagenome-atlas.rtfd.io" target="_blank" rel="noopener"><span>Docs</span></a>
+          <a class="nav-link " href="https://metagenome-atlas.rtfd.io" target="_blank" rel="noopener"><span>Documentation</span></a>
         </li>
 
         
@@ -441,6 +441,78 @@
 
         <li class="nav-item">
           <a class="nav-link " href="https://doi.org/10.1186/s12859-020-03585-4" target="_blank" rel="noopener"><span>Article</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://github.com/metagenome-atlas/Tutorial" target="_blank" rel="noopener"><span>Tutorial</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://github.com/metagenome-atlas/atlas/discussions" target="_blank" rel="noopener"><span>Forum</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://twitter.com/SilasKieser" target="_blank" rel="noopener"><span>Twitter</span></a>
         </li>
 
         
@@ -541,12 +613,11 @@
     </h1>
 
     
-    <div class="hero-lead"><p>
-<a href="http://twitter.com/intent/tweet?text=%23metagenomeAtlas%20%3A%20Three%20commands%20to%20start%20analyzing%20your%20data%2C%20from%20%40SilasKieser%20https%3A%2F%2Fbmcbioinformatics.biomedcentral.com%2Farticles%2F10.1186%2Fs12859-020-03585-4" target="_blank" rel="noopener">
-  <i class="fab fa-twitter  pr-1 fa-fw"></i> Tweet about it!</a></p>
-<p><span style="text-shadow: none;"><a class="github-button" href="https://github.com/metagenome-atlas/atlas" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star this on GitHub">Star</a><script async defer src="https://buttons.github.io/buttons.js"></script></span></p>
-<p>
-<a href="https://www.sib.swiss/training/course/2020-12-metagenomics" target="_blank" rel="noopener">Virtual class on 7. Dec 2020</a></p>
+    <div class="hero-lead"><div class="alert alert-note">
+  <div>
+    <a href="https://www.oulu.fi/uniogs/node/212131">Virtual class end of September 2021</a>
+  </div>
+</div>
 </div>
     
 
@@ -611,9 +682,7 @@
     <div class="col-lg-12">
       
       
-      <p>Metagenome-atlas is a easy-to-use metagenomic pipeline based on 
-<a href="https://snakemake.github.io/" target="_blank" rel="noopener">snakemake</a>. It handles all steps from QC, Assembly, Binning, to Annotation.</p>
-
+      
 
 
 
@@ -633,10 +702,10 @@
 <figure id="figure-scheme-of-workflow">
 
 
-  <a data-fancybox="" href="/img/atlas_scheme.jpg" data-caption="Scheme of workflow">
+  <a data-fancybox="" href="/img/atlas_scheme.png" data-caption="Scheme of workflow">
 
 
-  <img src="/img/atlas_scheme.jpg" alt="" width="400px" >
+  <img src="/img/atlas_scheme.png" alt="" width="400px" >
 </a>
 
 
@@ -649,43 +718,21 @@
 
 </figure>
 
-<h2 id="easy-to-use">Easy to use</h2>
-<p>You can start using atlas with three commands:</p>
+<p>Metagenome-atlas is a easy-to-use metagenomic pipeline based on 
+<a href="https://snakemake.github.io/" target="_blank" rel="noopener">snakemake</a>. It handles all steps from QC, Assembly, Binning, to Annotation &amp; Quantification.</p>
+<p>The pipline is easy to use. You can start using atlas with three commands:</p>
 <pre><code>    conda install -y -c bioconda -c conda-forge metagenome-atlas
     atlas init --db-dir databases path/to/fastq/files
     atlas run all
 </code></pre>
 <p><img src="img/caveman.jpg" alt="So easy a caveman could do it"></p>
-<!-- 
-
-
-
-  
-  
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-<video autoplay loop poster="/img/caveman.jpg">
-  <source src="/img/caveman.mp4" type="video/mp4">
-</video> -->
 <p>Atlas has only one dependency: 
 <a href="http://anaconda.org/" target="_blank" rel="noopener">conda</a>. All databases and other dependencies are installed <strong>on the fly</strong>.
 Atlas is based on snakemake which allows to run steps of the workflow in parallel on a cluster.</p>
-<h2 id="see-metagenome-atlas-in-action">See metagenome atlas in action</h2>
-<p>
-<a href="https://asciinema.org/a/337467" target="_blank" rel="noopener">Video</a></p>
+<!-- ## See metagenome atlas in action
+[Video](https://asciinema.org/a/337467)
 <script async id="asciicast-337467" src="https://asciinema.org/a/337467.js" charset="utf-8"></script>
+ -->
 <!-- [![asciicast](https://asciinema.org/a/337467.svg)](https://asciinema.org/a/337467) -->
 
     </div>
@@ -738,24 +785,41 @@ Atlas is based on snakemake which allows to run steps of the workflow in paralle
     <div class="col-lg-12">
       
       
-      <h1 id="others-on-metagenome-atlas">Others on Metagenome-Atlas</h1>
-<p><a class="twitter-timeline" data-height="800" data-theme="dark" href="https://twitter.com/SilasKieser/timelines/1270049886436646912?ref_src=twsrc%5Etfw">Others on Metagenome Atlas </a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-<h1 id="try-it-outhttpsmetagenome-atlasreadthedocsioenlatestusagegetting_startedhtml">
-<a href="https://metagenome-atlas.readthedocs.io/en/latest/usage/getting_started.html" target="_blank" rel="noopener">Try it out</a></h1>
-<!-- <div class="alert alert-note">
-  <div>
-    <p>This homepage section is an example of adding <a href="https://sourcethemes.com/academic/docs/writing-markdown-latex/">elements</a> to the <a href="https://sourcethemes.com/academic/docs/widgets/"><em>Blank</em> widget</a>.</p>
-<p><strong>To remove this section, delete <code>content/home/demo.md</code>.</strong></p>
+      <ul>
+<li>
+<p>
+<a href="https://metagenome-atlas.readthedocs.io/en/latest/usage/getting_started.html" target="_blank" rel="noopener">Get Started</a></p>
+</li>
+<li>
+<p>
+<a href="https://github.com/metagenome-atlas/atlas/discussions" target="_blank" rel="noopener">Join the forum</a></p>
+</li>
+<li>
+<p>
+<a href="https://twitter.com/SilasKieser" target="_blank" rel="noopener">
+  <i class="fab fa-twitter  pr-1 fa-fw"></i> Follow me on Twitter</a></p>
+</li>
+<li>
+<p>
+<a href="https://metagenome-atlas.readthedocs.io/en/latest/" target="_blank" rel="noopener">Check out the documentation</a></p>
+</li>
+<li>
+<p>
+<a href="https://github.com/metagenome-atlas/Tutorial" target="_blank" rel="noopener">Do the Tutorial</a></p>
+</li>
+</ul>
+<h1 id="others-on-metagenome-atlas">Others on Metagenome-Atlas</h1>
+<p><a class="twitter-timeline" data-height="800" data-width="800" data-theme="dark" href="https://twitter.com/SilasKieser/timelines/1270049886436646912?ref_src=twsrc%5Etfw">Others on Metagenome Atlas </a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<p>
+<a href="http://twitter.com/intent/tweet?text=%23metagenomeAtlas%20%3A%20Three%20commands%20to%20start%20analyzing%20your%20data%2C%20from%20%40SilasKieser%20https%3A%2F%2Fbmcbioinformatics.biomedcentral.com%2Farticles%2F10.1186%2Fs12859-020-03585-4" target="_blank" rel="noopener">
+  <i class="fab fa-twitter  pr-1 fa-fw"></i> Tweet about it!</a></p>
+<p><span style="text-shadow: none;"><a class="github-button" href="https://github.com/metagenome-atlas/atlas" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star this on GitHub">Star</a><script async defer src="https://buttons.github.io/buttons.js"></script></span></p>
+<!-- # Article
 
-  </div>
-</div>
- -->
-<h1 id="article">Article</h1>
-<p>ATLAS: a Snakemake workflow for assembly, annotation, and genomic binning of metagenome sequence data.<br>
-Kieser, S., Brown, J., Zdobnov, E. M., Trajkovski, M. &amp; McCue, L. A.<br>
-BMC Bioinformatics 21, 257 (2020).<br>
-
-<a href="https://doi.org/10.1186/s12859-020-03585-4" target="_blank" rel="noopener">doi: 10.1186/s12859-020-03585-4</a></p>
+ATLAS: a Snakemake workflow for assembly, annotation, and genomic binning of metagenome sequence data.  
+Kieser, S., Brown, J., Zdobnov, E. M., Trajkovski, M. & McCue, L. A.  
+BMC Bioinformatics 21, 257 (2020).  
+[doi: 10.1186/s12859-020-03585-4](https://doi.org/10.1186/s12859-020-03585-4)   -->
 
     </div>
   
@@ -1034,7 +1098,7 @@ BMC Bioinformatics 21, 257 (2020).<br>
     
     
     
-    <script src="/js/academic.min.37431be2d92d7fb0160054761ab79602.js"></script>
+    <script src="/js/academic.min.b2ed8054531fc8b77a9c500d5dfef876.js"></script>
 
     
 
